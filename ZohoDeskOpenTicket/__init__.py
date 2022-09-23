@@ -9,11 +9,11 @@ http azure: https://docs.microsoft.com/en-us/python/api/azure-functions/azure.fu
 import azure.functions as func
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
-    from ZohoDeskOpenTicketV2.ZohoDesk import config
+    from ZohoDeskOpenTicket.ZohoDesk import config
     from configparser import ConfigParser
-    import ZohoDeskOpenTicketV2.ZohoDesk.function as func_generic
-    import ZohoDeskOpenTicketV2.ZohoDesk.Authentication.authentication as token
-    import ZohoDeskOpenTicketV2.ZohoDesk as ZohoDesk
+    import ZohoDeskOpenTicket.ZohoDesk.function as func_generic
+    import ZohoDeskOpenTicket.ZohoDesk.Authentication.authentication as token
+    import ZohoDeskOpenTicket.ZohoDesk as ZohoDesk
 
     #Set config Info
     project_folder = config.config_object["GENERALCONFIG"]["temp_folder"] + "/ZohoDesk"
