@@ -3,3 +3,5 @@
 # Manually managing azure-functions-worker may cause unexpected issues
 
 azure-functions
+requests==2.24.0
+pandas==1.2.2

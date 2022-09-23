@@ -20,7 +20,7 @@ config_object["APICONFIG"] = {
 import os
 config_object["GENERALCONFIG"] = {
     "project_folder": os.getcwd()+'/ZohoDeskGetIdUser',
-    "temp_folder":"/home/data/SitePackages"
+    "temp_folder":"/home/data/Functions"
 }
 
 def save_file_ini():
